@@ -1,0 +1,15 @@
+ Would you wanna live in King House? @Pictures/Day1.1.png
+Y Wonderful! You got assigned the room 331. You have so much stuff to do. Do you wanna start unpacking now? @Pictures/Day1.2.jpeg
+N Yeah, who needs the loud quad, am I right? You got assigned to Cutter house. You miss your parents already though, do you wanna call them? @Pictures/Day1.3.jpeg
+YY Oh Well, this feels great. You look tired you could nap if you want to. Type Yes for me to understand. @Pictures/Day1.4.jpeg
+YN You ended up saying hi to your friends and you met Claire! She mentioned something about a party in the cloud though, do you want to go? @Pictures/Day1.5.jpeg
+NY It feels great to talk to them, but you shouldn't be sad. Come on, let's get you into doing something, do you want to watch a movie? @Pictures/Day1.6.jpeg
+NN You ended up taking a shower, and it was very refreshing. However, you don't have clean clothes to put on since you didn't unpack. Do you want to do that now? @Pictures/Day1.7.jpeg
+YYY That's what I thought. Well, have a good rest and see you tomorrow! @Pictures/Day1.8.jpeg
+YYN Well then I guess you could go to dinner. How about you do that, and I will see you tomorrow! @Pictures/Day1.9.jpeg
+YNY Ah it will be so great. I heard a lot of people talking about that too. I Bet you would have a great time. How about you go now, and I will see you tomorrow and you could fill me in! @Pictures/Day1.8.jpeg
+YNN Well in that case, I might suggest taking a look at your syllabus so you're well prepared for tomorrow. I will leave you to it... @Pictures/Day1.10.jpeg
+NYY Well then you should totally watch Interstellar, you love that! @Pictures/Day1.11.jpeg
+NYN Well in that case, I might suggest taking a look at your syllabus so you're well prepared for tomorrow. I will leave you to it... @Pictures/Day1.10.jpeg
+NNY You've got plenty to do then, I will leave you to it and get back to you tomorrow. Have a great rest of the day @Pictures/Day1.12.jpeg
+NNN Fair enough, you look tired. You should probably get dinner or nap for a bit. Unpacking can wait. @Pictures/day1.13.jpeg
