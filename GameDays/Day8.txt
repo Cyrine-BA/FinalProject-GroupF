@@ -1,19 +1,42 @@
- You don't have class today, but your professor is holding an office hour in the morning today. Do you want to go to the office hour? 
-Y Of course. I have some unsolved questions in my homework. This will be a good chance for me to understand the new knowledge. Do you want to have breakfast before heading to the Bass Hall? @A+@ image_path
-N I am so tired. I could go to the other office hour that holds right after class. You decide to sleep more. Do you want to go to the library after you wake up?
-YY Yes. A good breakfast starts a good day. You decide to go downstair and have some breakfast. In the dining hall, you meet your friend Cindy. She asks you to have breakfast together. Do you want to eat with her? 
-YN No. I want to arrive the office hour on time. There is always a lot of students during the office hour. I wish I could get a chance to ask a specific question. Luckily, you are the first student in the office hour. You impress your professor and solve all your questions in the homework. You feel a little bit tired now. Do you want to go back to your dorm now? 
-NY Library is a good place to focus! On your way to the library, you go pass the dining hall. There is a lot of people waiting in line for food. Do you want to grab some food? 
-NN This is a no-class day. I wish I could have plenty of rest. You decide to stay in dorm and have a phone call to your parents. At the moment, your friend Thu texted you to have lunch at UMass together. Do you want to go?
-YYY This is a good choice. You prefer to spend some time with your friend. Cindy and you have a good conversation. However, you did not pay attention to the time. The office hour is already began. There will always be a lot of students during the office hour. You will not have a chance to ask a specific question. Do you still want to go? 
-YYYY Yes I will. You did not get a chance to ask a specific question, but you learn a lot from other questions. 
-YYYN It is not worth to wait in line. You choose to focus on your homework at library. However, you feel sleepy later and go back to your dorm. Have a good rest! 
-YYN You choose to grab and go. You want to arrive the office hour on time. There will always be a lot of students during the office hour. You don't want to miss a chance to ask a specific question. Luckily, there is only two students in the office hour. You wait for a while and get the chance to ask the professor. You solve all your questions in the homework. You are feeling tired now, do you want to go to library? 
-YYNY You go to the library and study for a while. However, you feel sleepy later and go back to your dorm. Have a good rest! 
-YYNN You choose to go back to your dorm. You have a restful sleep! 
-YNY This is a no-class day. I wish I could have plenty of rest. You go back to your dorm and take a restful sleep.
-YNN You choose to go to the library instead. However, you are so sleepy. You learn for a while and then go back to your dorm to have a rest. 
-NYY You grab some food and coffee from the dining hall. You focus on your homework at the library. You finish most of your homework. 
-NYN It is not worth to wait for such a long time. You head directly to the library. You learn for a while and started to distract from your work. You decide to go back to your dorm and have a rest. 
-NNY I would love to get some food from UMass! You have a wonderful lunch with Thu! You also have some food that comes from your hometown. 
-NNN UMass is too far and you don't want to spend some time on commute. You invited Thu to have a dinner at Comstock instead, where it supplies stir fry. She accepts your invitation and both of you get a wonderful dinner. 
+ You are going to have a cheerleading practice today. You are not proficient in doing cartwheel. Do you want to practice cartwheel before the formal practice? 
+Y Since you practice cartwheel beforehand, you do a good cartwheel during the formal practice. Your stunt group is proud of your progress. Now it's time to practice with your stunt group. Do you want to practice halfup or swedish fall? 
+N You are still not proficient in cartwheel. The president spots you and teaches you how to do it. However, you are still afraid of being upside down. You can continue practicing the cartwheel or you can practice with your stunt group. Do you want to continue practicing with cartwheel? 
+YY halfup is a good start. Your group did a successful halfup. Now what do you want practice next, another halfup or swedish fall? 
+YN swedish fall is a good start. Your group did a successful swedish fall. Now what do you want practice next, another swedish fall or halfup? 
+NY It is important to get familiar with a successful cartwheel. You practice the cartwheel alone for a while. Now you have to practice with your stunt group. You can do either swedish fall or half up. Do you want to do swedish fall? 
+NN You decide to start practice with your stunt group. 
+
+
+YYY Oh no! You fall from the top this time. Luckily you don't hurt your head. You need to take a break now. 
+YYN Your group did a successful swedish fall. The president invites us to have a dinner together. Do you want to go?
+YYNY Of course! Cheers bonding! You enjoy the dinner with your cheers friend. 
+YYNN You prefer not because you want to spend some time on your homework. You finished your homework today. Good Job! 
+
+YNY Your group did a successful swedish fall. The president invites us to have a dinner together. Do you want to go?
+YNYY Of course! Cheers bonding! You enjoy the dinner with your cheers friend. 
+YNYN You prefer not because you want to spend some time on your homework. You finished your homework today. Good Job! 
+YNN Your group did a successful halfup. The president invites us to have a dinner together. Do you want to go?
+YNNY Of course! Cheers bonding! You enjoy the dinner with your cheers friend. 
+YNNN You prefer not because you want to spend some time on your homework. You finished your homework today. Good Job! 
+YNN 
+
+
+
+
+
+
+
+YYN  You feel a little bit tired now. Do you want to go back to your dorm now? 
+YNY  Then, you find out you miss a text message from your friend Thu. She texted you to have lunch at UMass together. Do you want to invite her to have a dinner together in the dining hall? 
+YNN You choose to go to the library instead. On you way to the library, you go pass the compass cafe. Do you want to order a cup of coffee? 
+YYYY It is always better to go than not to go. You head toward the Bass Hall. Not surprisingly, you see a lot of students waiting for questions. You do not get the chance to ask for a specific question. However, you learn a lot from other students' questions. It has been a busy day, you decide to go back to your dorm and have a sleep. 
+YYYN It is not worth to wait for a long time. You head toward library and focus on your other homework. You did a lot of homework. It has been a busy day, you decide to go back to your dorm and have a sleep. 
+YYNY This is a no-class day. I wish I could have plenty of rest. You go back to your dorm and take a nap. You are feeling much better now. You did some homework in the evening and have a good rest at night. 
+YYNN You choose to go to the library instead. However, you are so sleepy. You learn for a while and then go back to your dorm to have a good rest. 
+YNY 
+
+
+
+On your way to the Bass Hall, you met your friend Cindy, do you want to stop and chat with her?
+YY Cindy: Hi! How are you! We haven't seen each other for a long time. Do you want to have breakfast together? 
+N It is too early in the morning. I prefer to sleep more. Probably I will ask those questions after class. 

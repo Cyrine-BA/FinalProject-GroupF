@@ -8,6 +8,7 @@ import java.awt.Dimension;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
+import javax.swing.JLabel;
 
 /** 
 *. class that creates and controls the window 
@@ -39,8 +40,8 @@ public class Window extends JFrame{
    *. @param panel to work with
    *. @param ImgFile the path of the image we want to work with
   */
-  public void addComponentsToPanel(final Container panel, String Imgfile) {
-    panel.removeAll();
+  public void addComponentsToPanel(Container panel, String Imgfile) {
+    
     final JPanel compsToExperiment = new JPanel();
     compsToExperiment.setLayout(experimentLayout);
     experimentLayout.setAlignment(FlowLayout.TRAILING);
@@ -54,6 +55,12 @@ public class Window extends JFrame{
     // adds the background
     ImagePanel background = new ImagePanel(new ImageIcon(Imgfile).getImage().getScaledInstance((int)600, (int)400, Image.SCALE_DEFAULT));
     background.setLayout(new FlowLayout());
+    System.out.println("Bacgroung HERE:   "+ background);
+    
+    
+    System.out.println("panel Here" +panel.getComponents());
+    //adds the message
+    JLabel message = new JLabel("Welcome");
     
     //Add controls to set up the component orientation in the experiment layout
    
@@ -107,10 +114,11 @@ public class Window extends JFrame{
         compsToExperiment.repaint();
       }
     });
-
     panel.add(compsToExperiment, BorderLayout.NORTH);
+    panel.add(controls, BorderLayout.SOUTH); 
     panel.add(background, BorderLayout.CENTER);
-    panel.add(controls, BorderLayout.SOUTH); ;
+    // panel.add(message, BorderLayout.CENTER);
+    
     
   }
 
@@ -120,8 +128,9 @@ public class Window extends JFrame{
    * event dispatch thread.
    *. @param imgFile the path to the image
    */
-  private void createAndShowGUI(String imgFile) {
+  private  void createAndShowGUI(String imgFile) {
     Dimension winsize = new Dimension(600,400);
+    
 
     //Create and set up the window.
     // Window frame = new Window("O' College");
@@ -138,6 +147,23 @@ public class Window extends JFrame{
     this.pack();
     this.setVisible(true);
 
+  }
+
+  public void updateBack (String imgFile){
+    this.getContentPane().remove(2);
+    ImagePanel background = new ImagePanel(new ImageIcon(imgFile).getImage().getScaledInstance((int)600, (int)400, Image.SCALE_DEFAULT));
+    background.setLayout(new FlowLayout());
+    this.getContentPane().add(background, BorderLayout.CENTER);
+    
+    Dimension winsize = new Dimension(600,400);
+    this.setPreferredSize(winsize);
+    this.setMinimumSize(winsize);
+
+    this.getContentPane().setPreferredSize(new Dimension(600, 400));
+    this.revalidate();
+    this.repaint();;
+    // this.pack();
+    // this.setVisible(true);
   }
     
   /*

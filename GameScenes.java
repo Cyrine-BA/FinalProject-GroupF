@@ -12,7 +12,7 @@ public class GameScenes {
   public static void main(String[] args){
 
     /** creates the window */
-    Window win = new Window("O'college");
+    Window win = new Window("O'College");
     win.showWindow("Pictures/Welcome.jpeg");
     
     // wait for 3 seconds
@@ -35,7 +35,7 @@ public class GameScenes {
     System.out.println("Welcome to the game");
     System.out.println();
 
-    while (nextDay && i<20){
+    while (nextDay && i<8){
       // increment the counter
       i++;
 
@@ -63,7 +63,7 @@ public class GameScenes {
         String imgFile = current.getData().substring(current.getData().indexOf("@")+1);
 
         /** sets the window*/
-        win.showWindow(imgFile);
+        win.updateBack(imgFile);
         
         System.out.println(prompt);
         System.out.println(imgFile);
@@ -92,7 +92,7 @@ public class GameScenes {
       String imgFile = current.getData().substring(current.getData().indexOf("@")+1);
 
       /** sets the window*/
-      win.showWindow(imgFile);;
+      win.updateBack(imgFile);;
       
       System.out.println(prompt);
       System.out.println(imgFile);
