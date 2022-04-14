@@ -40,6 +40,7 @@ public class Window extends JFrame{
    *. @param ImgFile the path of the image we want to work with
   */
   public void addComponentsToPanel(final Container panel, String Imgfile) {
+    panel.removeAll();
     final JPanel compsToExperiment = new JPanel();
     compsToExperiment.setLayout(experimentLayout);
     experimentLayout.setAlignment(FlowLayout.TRAILING);
