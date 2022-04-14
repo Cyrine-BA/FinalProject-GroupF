@@ -26,13 +26,12 @@ public class Window extends JFrame{
   JButton exitButton = new JButton("Exit");
   JButton pauseButton = new JButton("Pause");
 
+
   /** the contructor */
   public Window(String name) {
-      super(name);
+    super(name);
   }
 
-  // the background
-  ImagePanel background;
 
 
   /**
@@ -52,11 +51,11 @@ public class Window extends JFrame{
     compsToExperiment.add(pauseButton);
 
     // adds the background
-    this.background = new ImagePanel(new ImageIcon(Imgfile).getImage().getScaledInstance((int)600, (int)400, Image.SCALE_DEFAULT));
+    ImagePanel background = new ImagePanel(new ImageIcon(Imgfile).getImage().getScaledInstance((int)600, (int)400, Image.SCALE_DEFAULT));
     background.setLayout(new FlowLayout());
     
     //Add controls to set up the component orientation in the experiment layout
-    // final ButtonGroup group = new ButtonGroup();
+   
     controls.add(yesButton);
     controls.add(noButton);
         
@@ -120,30 +119,31 @@ public class Window extends JFrame{
    * event dispatch thread.
    *. @param imgFile the path to the image
    */
-  private static void createAndShowGUI(String imgFile) {
+  private void createAndShowGUI(String imgFile) {
     Dimension winsize = new Dimension(600,400);
 
     //Create and set up the window.
-    Window frame = new Window("O'College");
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    //Set up the content pane.
-    frame.addComponentsToPanel(frame.getContentPane(), imgFile);
+    // Window frame = new Window("O' College");
+    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    //Set up the content panel
+    this.addComponentsToPanel(this.getContentPane(), imgFile);
           
-    frame.setPreferredSize(winsize);
-    frame.setMinimumSize(winsize);
+    this.setPreferredSize(winsize);
+    this.setMinimumSize(winsize);
 
-    frame.getContentPane().setPreferredSize(new Dimension(600, 400));
+    this.getContentPane().setPreferredSize(new Dimension(600, 400));
     
     //Display the window.
-    frame.pack();
-    frame.setVisible(true);
+    this.pack();
+    this.setVisible(true);
+
   }
     
   /*
    *. creates and shows the window 
    *. @param the path to the image file 
   */
-  public static void showWindow(String imgFile){
+  public void showWindow(String imgFile){
     /* Use an appropriate Look and Feel */
     try {
       //UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
@@ -157,24 +157,33 @@ public class Window extends JFrame{
     } catch (ClassNotFoundException ex) {
      ex.printStackTrace();
     }
+    
     /* Turn off metal's use of bold fonts */
     UIManager.put("swing.boldMetal", Boolean.FALSE);
     //Schedule a job for the event dispatchi thread:
     //creating and showing this application's GUI.
     javax.swing.SwingUtilities.invokeLater(new Runnable() {
-        public void run() {
-            createAndShowGUI(imgFile);
-        }
+      public void run() {
+        createAndShowGUI(imgFile);
+      }
     });
     
   }
 
-  public static void main(String[] args) {
-    showWindow ("Pictures/Day1.1.jpeg");
-  }
 
-  public void changeBackground(String imgFile){
+
+  // public void changeBackground(String imgFile, Window frame){
+  //   ImagePanel newBackground = new ImagePanel(new ImageIcon(imgFile).getImage().getScaledInstance((int)600, (int)400, Image.SCALE_DEFAULT));
+  //   System.out.println(newBackground);
+  //   frame.add(newBackground, BorderLayout.CENTER);
+  //   System.out.println(frame);
+  //   frame.revalidate();
+  //   frame.repaint();
+  // }
+  
+  
     
-  }
+  
+
 
 }

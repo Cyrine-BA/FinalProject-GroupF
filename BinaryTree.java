@@ -65,7 +65,7 @@ public class BinaryTree<E> {
     }
 
     /** Determines whether a tree is empty */
-    public static boolean isEmpty(BinaryTree node) {
+    public boolean isEmpty(BinaryTree<E> node) {
 	      return (node == null);
     }
 
