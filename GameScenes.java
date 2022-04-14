@@ -14,12 +14,13 @@ public class GameScenes {
     /** creates the window */
     Window win = new Window("O'college");
     win.showWindow("Pictures/Welcome.jpeg");
+    
     // wait for 3 seconds
-    try {
+     try { 
      Thread.sleep(3000);               
     } catch(InterruptedException ex) {
-      Thread.currentThread().interrupt();
-    }
+       Thread.currentThread().interrupt();
+     }
 
     /** Scanner to read input from console */
     Scanner in = new Scanner (System.in);
@@ -84,8 +85,17 @@ public class GameScenes {
         
       }
 
-      //print the last line
-      System.out.println(current.getData());
+      /** holds last line */
+      String prompt = current.getData().substring(0,current.getData().indexOf("@"));
+
+      /** holds the image path */
+      String imgFile = current.getData().substring(current.getData().indexOf("@")+1);
+
+      /** sets the window*/
+      win.showWindow(imgFile);;
+      
+      System.out.println(prompt);
+      System.out.println(imgFile);
 
       
       // ask if they want to play again
