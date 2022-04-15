@@ -13,14 +13,14 @@ public class GameScenes {
 
     /** creates the window */
     Window win = new Window("O'College");
-    win.showWindow("Pictures/Welcome.jpeg");
+    win.showWindow("Pictures/Welcome.jpeg", "Welcome to Smith!!");
     
     // wait for 3 seconds
      try { 
      Thread.sleep(3000);               
     } catch(InterruptedException ex) {
-       Thread.currentThread().interrupt();
-     }
+      Thread.currentThread().interrupt();
+    }
 
     /** Scanner to read input from console */
     Scanner in = new Scanner (System.in);
@@ -63,7 +63,7 @@ public class GameScenes {
         String imgFile = current.getData().substring(current.getData().indexOf("@")+1);
 
         /** sets the window*/
-        win.updateBack(imgFile);
+        win.updateBack(imgFile, prompt);
         
         System.out.println(prompt);
         System.out.println(imgFile);
@@ -92,7 +92,7 @@ public class GameScenes {
       String imgFile = current.getData().substring(current.getData().indexOf("@")+1);
 
       /** sets the window*/
-      win.updateBack(imgFile);;
+      win.updateBack(imgFile, prompt);;
       
       System.out.println(prompt);
       System.out.println(imgFile);

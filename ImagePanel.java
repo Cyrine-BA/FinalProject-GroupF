@@ -1,8 +1,9 @@
+import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Image;
+
 
 /** 
 *. class that sets an image panel to be used as a background
@@ -44,4 +45,5 @@ class ImagePanel extends JPanel {
     g.drawImage(img, 0, 0, null);
   }
 
+  
 }

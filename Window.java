@@ -8,7 +8,8 @@ import java.awt.Dimension;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
-import javax.swing.JLabel;
+import javax.swing.OverlayLayout;
+
 
 /** 
 *. class that creates and controls the window 
@@ -40,7 +41,7 @@ public class Window extends JFrame{
    *. @param panel to work with
    *. @param ImgFile the path of the image we want to work with
   */
-  public void addComponentsToPanel(Container panel, String Imgfile) {
+  public void addComponentsToPanel(Container panel, String Imgfile, String message) {
     
     final JPanel compsToExperiment = new JPanel();
     compsToExperiment.setLayout(experimentLayout);
@@ -54,13 +55,21 @@ public class Window extends JFrame{
 
     // adds the background
     ImagePanel background = new ImagePanel(new ImageIcon(Imgfile).getImage().getScaledInstance((int)600, (int)400, Image.SCALE_DEFAULT));
-    background.setLayout(new FlowLayout());
-    System.out.println("Bacgroung HERE:   "+ background);
+    background.setLayout (new OverlayLayout(background));
+
+    JLabel text = new JLabel(message);
+    text.setForeground(Color.black);
+    text.setFont(new Font("SansSerif", Font.BOLD, 16));
+    text.setAlignmentX(0.5f);
+    text.setAlignmentY(0.5f);
+    text.setVerticalAlignment(text.CENTER);
+    background.add(text);
+
+    System.out.println("Background HERE:   "+ background);
     
     
     System.out.println("panel Here" +panel.getComponents());
-    //adds the message
-    JLabel message = new JLabel("Welcome");
+    
     
     //Add controls to set up the component orientation in the experiment layout
    
@@ -128,7 +137,7 @@ public class Window extends JFrame{
    * event dispatch thread.
    *. @param imgFile the path to the image
    */
-  private  void createAndShowGUI(String imgFile) {
+  private  void createAndShowGUI(String imgFile, String message) {
     Dimension winsize = new Dimension(600,400);
     
 
@@ -136,7 +145,7 @@ public class Window extends JFrame{
     // Window frame = new Window("O' College");
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     //Set up the content panel
-    this.addComponentsToPanel(this.getContentPane(), imgFile);
+    this.addComponentsToPanel(this.getContentPane(), imgFile, message);
           
     this.setPreferredSize(winsize);
     this.setMinimumSize(winsize);
@@ -149,15 +158,29 @@ public class Window extends JFrame{
 
   }
 
-  public void updateBack (String imgFile){
+  /**
+   * this method changes the background image
+   * 
+   *. @param imgFile the path to the image
+   */
+  public void updateBack (String imgFile, String message){
+    // update the image
     this.getContentPane().remove(2);
     ImagePanel background = new ImagePanel(new ImageIcon(imgFile).getImage().getScaledInstance((int)600, (int)400, Image.SCALE_DEFAULT));
     background.setLayout(new FlowLayout());
+    
+    //update the text 
+    JLabel text = new JLabel(message);
+    text.setForeground(Color.black);
+    text.setFont(new Font("SansSerif", Font.BOLD, 16));
+    text.setAlignmentX(0.5f);
+    text.setAlignmentY(0.5f);
+    text.setVerticalAlignment(text.CENTER);
+    background.add(text);
+
     this.getContentPane().add(background, BorderLayout.CENTER);
     
-    Dimension winsize = new Dimension(600,400);
-    this.setPreferredSize(winsize);
-    this.setMinimumSize(winsize);
+    
 
     this.getContentPane().setPreferredSize(new Dimension(600, 400));
     this.revalidate();
@@ -170,7 +193,7 @@ public class Window extends JFrame{
    *. creates and shows the window 
    *. @param the path to the image file 
   */
-  public void showWindow(String imgFile){
+  public void showWindow(String imgFile, String message){
     /* Use an appropriate Look and Feel */
     try {
       //UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
@@ -191,7 +214,7 @@ public class Window extends JFrame{
     //creating and showing this application's GUI.
     javax.swing.SwingUtilities.invokeLater(new Runnable() {
       public void run() {
-        createAndShowGUI(imgFile);
+        createAndShowGUI(imgFile, message);
       }
     });
     
