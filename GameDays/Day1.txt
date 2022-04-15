@@ -1,4 +1,4 @@
- Would you wanna live in King House? @Pictures/Day1.1.jpeg
+ Would you wanna live in King House? @Pictures/Welcome.jpeg
 Y Wonderful! You got assigned the room 331. You have so much stuff to do. Do you wanna start unpacking now? @Pictures/Day1.2.jpeg
 N Yeah, who needs the loud quad, am I right? You got assigned to Cutter house. You miss your parents already though, do you wanna call them? @Pictures/Day1.3.jpeg
 YY Oh Well, this feels great. You look tired you could nap if you want to. Type Yes for me to understand. @Pictures/Day1.4.jpeg

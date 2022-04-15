@@ -13,7 +13,7 @@ public class GameScenes {
 
     /** creates the window */
     Window win = new Window("O'College");
-    win.showWindow("Pictures/Welcome.jpeg", "Welcome to Smith!!");
+    win.showWindow("Pictures/Day1.8.jpeg", "Welcome to Smith!!");
     
     // wait for 3 seconds
      try { 

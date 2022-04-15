@@ -45,7 +45,7 @@ public class Window extends JFrame{
     
     final JPanel compsToExperiment = new JPanel();
     compsToExperiment.setLayout(experimentLayout);
-    experimentLayout.setAlignment(FlowLayout.TRAILING);
+    // experimentLayout.setAlignment(FlowLayout.TRAILING);
     JPanel controls = new JPanel();
     controls.setLayout(new FlowLayout());
        
@@ -63,7 +63,7 @@ public class Window extends JFrame{
     text.setAlignmentX(0.5f);
     text.setAlignmentY(0.5f);
     text.setVerticalAlignment(text.CENTER);
-    background.add(text);
+    this.add(text);
 
     System.out.println("Background HERE:   "+ background);
     
@@ -165,9 +165,9 @@ public class Window extends JFrame{
    */
   public void updateBack (String imgFile, String message){
     // update the image
-    this.getContentPane().remove(2);
+    // this.getContentPane().remove(2);
     ImagePanel background = new ImagePanel(new ImageIcon(imgFile).getImage().getScaledInstance((int)600, (int)400, Image.SCALE_DEFAULT));
-    background.setLayout(new FlowLayout());
+    background.setLayout(new OverlayLayout(background));
     
     //update the text 
     JLabel text = new JLabel(message);
