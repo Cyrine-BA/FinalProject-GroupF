@@ -63,7 +63,7 @@ public class Window extends JFrame{
     text.setAlignmentX(0.5f);
     text.setAlignmentY(0.5f);
     text.setVerticalAlignment(text.CENTER);
-    this.add(text);
+    background.add(text);
 
     System.out.println("Background HERE:   "+ background);
     
@@ -82,9 +82,12 @@ public class Window extends JFrame{
         String command = "Click yes!!";
         //Check the selection
         System.out.println(command);
+        
         //update the experiment layout
         compsToExperiment.validate();
         compsToExperiment.repaint();
+
+  
       }
     });
 

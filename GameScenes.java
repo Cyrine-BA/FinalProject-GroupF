@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 /*
 *. class that controls the flow of the game (the game days)
 *.
@@ -57,16 +58,13 @@ public class GameScenes {
       // run one round of guessing
       while (!current.isLeaf()){
         /** holds the prompt */
-        String prompt = current.getData().substring(0,current.getData().indexOf("@"));
-
-        /** holds the image path */
-        String imgFile = current.getData().substring(current.getData().indexOf("@")+1);
+        String prompt = current.getData();
 
         /** sets the window*/
-        win.updateBack(imgFile, prompt);
+        // win.updateBack(imgFile, prompt);
         
         System.out.println(prompt);
-        System.out.println(imgFile);
+        // System.out.println(imgFile);
         String response = in.nextLine();
   
         // check that their answer is valid
@@ -82,20 +80,22 @@ public class GameScenes {
         } else {
           current = current.getRight();
         }
+  
+        
         
       }
 
       /** holds last line */
-      String prompt = current.getData().substring(0,current.getData().indexOf("@"));
+      String prompt = current.getData();
 
       /** holds the image path */
-      String imgFile = current.getData().substring(current.getData().indexOf("@")+1);
+      // String imgFile = current.getData().substring(current.getData().indexOf("@")+1);
 
       /** sets the window*/
-      win.updateBack(imgFile, prompt);;
+      // win.updateBack(imgFile, prompt);;
       
       System.out.println(prompt);
-      System.out.println(imgFile);
+      // System.out.println(imgFile);
 
       
       // ask if they want to play again
