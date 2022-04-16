@@ -1,12 +1,9 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.JButton;
-import javax.swing.JFrame;
+
 import java.awt.Dimension;
 import java.awt.Image;
-import javax.swing.ImageIcon;
-import javax.swing.JPanel;
 
 
 /** 
@@ -17,18 +14,20 @@ import javax.swing.JPanel;
 */
 public class Window extends JFrame{
 
-  /** arranges components in a left-to-right flow*/
+  /** panels containing different components of the window*/
   JPanel controls = new JPanel();
   JPanel image = new JPanel();
   JPanel choices = new JPanel();
   JLabel text = new JLabel("", null, JLabel.CENTER);
   
   /** the buttons that we'll be using*/
-  static JButton yesButton = new JButton("YES");
-  static JButton noButton = new JButton("NO");
-  static JButton exitButton = new JButton("Exit");
-  static JButton pauseButton = new JButton("Pause");
-
+  JButton yesButton = new JButton("YES");
+  JButton noButton = new JButton("NO");
+  JButton exitButton = new JButton("Exit");
+  JButton pauseButton = new JButton("Pause");
+  JButton anyButton = new JButton("Invisible button");
+  
+  /** checks for the user's response */
   String response = "";
 
 
@@ -40,7 +39,6 @@ public class Window extends JFrame{
   public void setUp() {
 
     controls.setLayout(new FlowLayout());
-    //setAlignment(FlowLayout.TRAILING)
     image.setLayout(new FlowLayout());
     choices.setLayout(new FlowLayout());
 
@@ -51,15 +49,19 @@ public class Window extends JFrame{
     text.setVerticalAlignment(text.CENTER);
 
 
-    //Add buttons to the experiment layout
+    //Add exit and pause to the experiment layout
     controls.add(exitButton);
     controls.add(pauseButton);
-    //Add controls to set up the component orientation in the experiment layout
+
+    //Add  yes and no controls to set up the component orientation in the experiment layout
     choices.add(yesButton);
     choices.add(noButton);
-
+    
+    // add the bakcground image
     image.add(text, BorderLayout.CENTER );
 
+
+    //adds all panels to the frame
     this.getContentPane().add(controls, BorderLayout.NORTH);
     this.getContentPane().add(image, BorderLayout.CENTER);
     this.getContentPane().add(choices, BorderLayout.SOUTH);
@@ -72,10 +74,13 @@ public class Window extends JFrame{
         String command = "Click yes!!";
         //Check the selection
         System.out.println(command);
-        response = "yes";
-        synchronized (yesButton) {
-          yesButton.notify();
-        }
+        anyButton.setActionCommand("yes clicked");
+        anyButton.doClick();
+        
+        // synchronized (anyButton) {
+        //   anyButton.setActionCommand("yes clicked");
+        //   anyButton.notify();
+        // }
       }
     });
 
@@ -85,18 +90,42 @@ public class Window extends JFrame{
         String command = "Click no!!";
         //Check the selection
         System.out.println(command);
-        response = "no";
-        synchronized (noButton) {
-          noButton.notify();
-        }
+        setResponse("no");
+        anyButton.setActionCommand("no clicked");
+        anyButton.doClick();
+        // synchronized (anyButton) {
+        //   anyButton.setActionCommand("no clicked");
+        //   anyButton.notify();
+        // }
 
       }
     });
+
+    anyButton.addActionListener(new ActionListener(){
+      public void actionPerformed(ActionEvent e) {
+        System.out.println(anyButton.getActionCommand());
+        if (anyButton.getActionCommand().equals("yes clicked")){
+          setResponse("yes");
+          System.out.println(getResponse());
+        } else {
+          setResponse("no");
+          System.out.println(getResponse());
+        }
+        synchronized (anyButton) {
+          anyButton.notifyAll();
+        }
+      }
+
+    });
+
+  
+
 
     //Process the Exit button press
     exitButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
         String command = "Click Exit!!";
+
         //Check the selection
         System.out.println(command);
 
@@ -107,6 +136,7 @@ public class Window extends JFrame{
     pauseButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
         String command = "Click Pause!!";
+
         //Check the selection
         System.out.println(command);
       }
@@ -130,11 +160,11 @@ public class Window extends JFrame{
   }
 
   public String getResponse() {
-    return response;
+    return this.response;
   }
 
-  public String setResponse() {
-    response = "";
+  public String setResponse(String str) {
+    this.response = str;
     return response;
   }
 
@@ -195,15 +225,5 @@ public class Window extends JFrame{
     
   }
 
-
-
-  // public void changeBackground(String imgFile, Window frame){
-  //   ImagePanel newBackground = new ImagePanel(new ImageIcon(imgFile).getImage().getScaledInstance((int)600, (int)400, Image.SCALE_DEFAULT));
-  //   System.out.println(newBackground);
-  //   frame.add(newBackground, BorderLayout.CENTER);
-  //   System.out.println(frame);
-  //   frame.revalidate();
-  //   frame.repaint();
-  // }
 
 }

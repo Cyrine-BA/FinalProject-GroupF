@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 
 /*
 *. class that controls the flow of the game (the game days)
@@ -12,7 +10,7 @@ public class GameScenes {
   // runs the game
   public static void main(String[] args) throws InterruptedException{
 
-    /** creates the window */
+    // /** creates the window */
     Window win = new Window("O'College");
     win.showWindow("Pictures/Day1.8.jpeg", "Welcome to Smith!!");
     
@@ -158,6 +156,14 @@ public class GameScenes {
         System.out.println("Interrupted");
       }
     }
+    synchronized(Window.noButton) {
+      try { 
+        Window.yesButton.wait();
+      } catch (InterruptedException ex) {
+        System.out.println("Interrupted");
+      }
+    }
+
     System.out.println("After button clicked");
   }
   
