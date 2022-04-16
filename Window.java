@@ -1,14 +1,12 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import java.awt.Container;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import java.awt.Dimension;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
-import javax.swing.OverlayLayout;
 
 
 /** 
@@ -20,13 +18,18 @@ import javax.swing.OverlayLayout;
 public class Window extends JFrame{
 
   /** arranges components in a left-to-right flow*/
-  FlowLayout experimentLayout = new FlowLayout();
-
+  JPanel controls = new JPanel();
+  JPanel image = new JPanel();
+  JPanel choices = new JPanel();
+  JLabel text = new JLabel("", null, JLabel.CENTER);
+  
   /** the buttons that we'll be using*/
-  JButton yesButton = new JButton("YES");
-  JButton noButton = new JButton("NO");
-  JButton exitButton = new JButton("Exit");
-  JButton pauseButton = new JButton("Pause");
+  static JButton yesButton = new JButton("YES");
+  static JButton noButton = new JButton("NO");
+  static JButton exitButton = new JButton("Exit");
+  static JButton pauseButton = new JButton("Pause");
+
+  String response = "";
 
 
   /** the contructor */
@@ -34,72 +37,59 @@ public class Window extends JFrame{
     super(name);
   }
 
+  public void setUp() {
 
-
-  /**
-   *. adds components to the the window
-   *. @param panel to work with
-   *. @param ImgFile the path of the image we want to work with
-  */
-  public void addComponentsToPanel(Container panel, String Imgfile, String message) {
-    
-    final JPanel compsToExperiment = new JPanel();
-    compsToExperiment.setLayout(experimentLayout);
-    // experimentLayout.setAlignment(FlowLayout.TRAILING);
-    JPanel controls = new JPanel();
     controls.setLayout(new FlowLayout());
-       
-    //Add buttons to the experiment layout
-    compsToExperiment.add(exitButton);
-    compsToExperiment.add(pauseButton);
+    //setAlignment(FlowLayout.TRAILING)
+    image.setLayout(new FlowLayout());
+    choices.setLayout(new FlowLayout());
 
-    // adds the background
-    ImagePanel background = new ImagePanel(new ImageIcon(Imgfile).getImage().getScaledInstance((int)600, (int)400, Image.SCALE_DEFAULT));
-    background.setLayout (new OverlayLayout(background));
-
-    JLabel text = new JLabel(message);
     text.setForeground(Color.black);
     text.setFont(new Font("SansSerif", Font.BOLD, 16));
     text.setAlignmentX(0.5f);
     text.setAlignmentY(0.5f);
     text.setVerticalAlignment(text.CENTER);
-    background.add(text);
 
-    System.out.println("Background HERE:   "+ background);
-    
-    
-    System.out.println("panel Here" +panel.getComponents());
-    
-    
+
+    //Add buttons to the experiment layout
+    controls.add(exitButton);
+    controls.add(pauseButton);
     //Add controls to set up the component orientation in the experiment layout
-   
-    controls.add(yesButton);
-    controls.add(noButton);
-        
-    //Process the YES button press
+    choices.add(yesButton);
+    choices.add(noButton);
+
+    image.add(text, BorderLayout.CENTER );
+
+    this.getContentPane().add(controls, BorderLayout.NORTH);
+    this.getContentPane().add(image, BorderLayout.CENTER);
+    this.getContentPane().add(choices, BorderLayout.SOUTH);
+    // panel.add(message, BorderLayout.CENTER);
+
+
+    //Process the Yes button press
     yesButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
         String command = "Click yes!!";
         //Check the selection
         System.out.println(command);
-        
-        //update the experiment layout
-        compsToExperiment.validate();
-        compsToExperiment.repaint();
-
-  
+        response = "yes";
+        synchronized (yesButton) {
+          yesButton.notify();
+        }
       }
     });
 
-    //Process the NO button press
+    //Process the No button press
     noButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
         String command = "Click no!!";
         //Check the selection
         System.out.println(command);
-        //update the experiment layout
-        compsToExperiment.validate();
-        compsToExperiment.repaint();
+        response = "no";
+        synchronized (noButton) {
+          noButton.notify();
+        }
+
       }
     });
 
@@ -109,9 +99,7 @@ public class Window extends JFrame{
         String command = "Click Exit!!";
         //Check the selection
         System.out.println(command);
-        //update the experiment layout
-        compsToExperiment.validate();
-        compsToExperiment.repaint();
+
       }
     });
 
@@ -121,17 +109,33 @@ public class Window extends JFrame{
         String command = "Click Pause!!";
         //Check the selection
         System.out.println(command);
-        //update the experiment layout
-        compsToExperiment.validate();
-        compsToExperiment.repaint();
       }
     });
-    panel.add(compsToExperiment, BorderLayout.NORTH);
-    panel.add(controls, BorderLayout.SOUTH); 
-    panel.add(background, BorderLayout.CENTER);
-    // panel.add(message, BorderLayout.CENTER);
+
+  }
+
+  /**
+   *. changes the background image and text
+   *. @param imgFile the path of the image we want to work with
+   *. @param message the text
+  */
+  public void updateComponents(String imgFile, String message) {
     
-    
+    ImageIcon temp = new ImageIcon(imgFile);
+    Image temp2 = temp.getImage().getScaledInstance((int)600, (int)400, Image.SCALE_SMOOTH);
+    ImageIcon img = new ImageIcon(temp2);
+    text.setText(message);
+    text.setIcon(img);
+
+  }
+
+  public String getResponse() {
+    return response;
+  }
+
+  public String setResponse() {
+    response = "";
+    return response;
   }
 
   /**
@@ -143,12 +147,12 @@ public class Window extends JFrame{
   private  void createAndShowGUI(String imgFile, String message) {
     Dimension winsize = new Dimension(600,400);
     
-
     //Create and set up the window.
     // Window frame = new Window("O' College");
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     //Set up the content panel
-    this.addComponentsToPanel(this.getContentPane(), imgFile, message);
+    this.setUp();
+    this.updateComponents(imgFile, message);
           
     this.setPreferredSize(winsize);
     this.setMinimumSize(winsize);
@@ -158,38 +162,6 @@ public class Window extends JFrame{
     //Display the window.
     this.pack();
     this.setVisible(true);
-
-  }
-
-  /**
-   * this method changes the background image
-   * 
-   *. @param imgFile the path to the image
-   */
-  public void updateBack (String imgFile, String message){
-    // update the image
-    // this.getContentPane().remove(2);
-    ImagePanel background = new ImagePanel(new ImageIcon(imgFile).getImage().getScaledInstance((int)600, (int)400, Image.SCALE_DEFAULT));
-    background.setLayout(new OverlayLayout(background));
-    
-    //update the text 
-    JLabel text = new JLabel(message);
-    text.setForeground(Color.black);
-    text.setFont(new Font("SansSerif", Font.BOLD, 16));
-    text.setAlignmentX(0.5f);
-    text.setAlignmentY(0.5f);
-    text.setVerticalAlignment(text.CENTER);
-    background.add(text);
-
-    this.getContentPane().add(background, BorderLayout.CENTER);
-    
-    
-
-    this.getContentPane().setPreferredSize(new Dimension(600, 400));
-    this.revalidate();
-    this.repaint();;
-    // this.pack();
-    // this.setVisible(true);
   }
     
   /*
@@ -233,10 +205,5 @@ public class Window extends JFrame{
   //   frame.revalidate();
   //   frame.repaint();
   // }
-  
-  
-    
-  
-
 
 }
