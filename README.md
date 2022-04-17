@@ -8,7 +8,7 @@ By the end of the game, the user might get rewards depending on their final perf
 
 ## Installing and playing
 For successful installation, make sure all the the files are included and specifically the image files that play a major role in the graphics portion of the game. 
-Once installed, the game could be run through the console by typing in the command java Game and the game should 
+Once installed, the game could be run through the console by typing in the command: java Game  and the game should begin.
 
 ## Collaborators 
 This game was developed as part of a final project for CSC151: Introduction to Programming Language Concepts at Smith College taught by Dr. Johanna Brewer. 
