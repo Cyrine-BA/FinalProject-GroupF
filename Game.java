@@ -23,14 +23,6 @@ public class Game {
         /**holds the current position of the decison tree */
         DecisionTree current = dayTree;
 
-        // // show the window 
-        // win.showWindow("Pictures/Welcome.jpeg", "Welcome to Smith!!");
-        // // wait for 3 seconds
-        // try { 
-        //   Thread.sleep(3000);               
-        // } catch(InterruptedException ex) {
-        //   Thread.currentThread().interrupt();
-        // }
 
         while (!current.isLeaf()){
           /** holds the prompt */
@@ -99,10 +91,17 @@ public class Game {
         
         System.out.println("After button clicked");
     }
-
+    
+    /** the main class to run our program
+     * 
+     * @param args
+     * @throws InterruptedException
+     */
     public static void main (String[] args) throws InterruptedException{
       // show the window 
       win.showWindow("Pictures/Welcome.jpeg", "Welcome to Smith!!");
+
+
       // wait for 3 seconds
       try { 
         Thread.sleep(3000);               
@@ -110,7 +109,7 @@ public class Game {
         Thread.currentThread().interrupt();
       }
 
-
+      //loop through each day
       for (int i=1; i<3; i++){
         runDay(i);
         // wait for 3 seconds
@@ -121,6 +120,7 @@ public class Game {
         }
         
       }
+      //exit when done
       System.exit(0);
         
     }

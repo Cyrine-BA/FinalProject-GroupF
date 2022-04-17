@@ -1,3 +1,10 @@
+/**
+ * class that represents one game day decision tree and number
+ * 
+ * @version Spring 2022
+ * @author Cyrine Ben Ayed and Jessica Feng
+ */
+
 public class GameDay {
     /** holds the number of the day we're in */
     int dayNum;

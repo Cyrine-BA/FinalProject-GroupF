@@ -1,7 +1,6 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.OverlayLayout;
 import java.awt.Dimension;
 import java.awt.Image;
 
@@ -35,13 +34,15 @@ public class Window extends JFrame{
   public Window(String name) {
     super(name);
   }
-
+  /** method to set up our window components */
   public void setUp() {
-
+    // set the buttons and image panels
     controls.setLayout(new FlowLayout());
     image.setLayout(new FlowLayout());
     choices.setLayout(new FlowLayout());
 
+
+    // set the text
     text.setForeground(Color.black);
     text.setFont(new Font("SansSerif", Font.BOLD, 16));
     text.setAlignmentX(0.5f);
@@ -49,7 +50,6 @@ public class Window extends JFrame{
     text.setVerticalAlignment(text.CENTER);
     text.setLayout(new FlowLayout());
     
-
 
     //Add exit and pause to the experiment layout
     controls.add(exitButton);
@@ -78,11 +78,6 @@ public class Window extends JFrame{
         System.out.println(command);
         anyButton.setActionCommand("yes clicked");
         anyButton.doClick();
-        
-        // synchronized (anyButton) {
-        //   anyButton.setActionCommand("yes clicked");
-        //   anyButton.notify();
-        // }
       }
     });
 
@@ -95,11 +90,6 @@ public class Window extends JFrame{
         setResponse("no");
         anyButton.setActionCommand("no clicked");
         anyButton.doClick();
-        // synchronized (anyButton) {
-        //   anyButton.setActionCommand("no clicked");
-        //   anyButton.notify();
-        // }
-
       }
     });
 
@@ -120,10 +110,8 @@ public class Window extends JFrame{
 
     });
 
-  
 
-
-    //Process the Exit button press
+    //Process the Exit button press => still in progress
     exitButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
         String command = "Click Exit!!";
@@ -134,7 +122,7 @@ public class Window extends JFrame{
       }
     });
 
-    //Process the Pause button press
+    //Process the Pause button press => still in progress
     pauseButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
         String command = "Click Pause!!";
@@ -162,11 +150,12 @@ public class Window extends JFrame{
     text.setHorizontalTextPosition(JLabel.CENTER);
 
   }
-
+  
+  /** @return the response of the user */
   public String getResponse() {
     return this.response;
   }
-
+  /** sets the response field */
   public String setResponse(String str) {
     this.response = str;
     return response;
