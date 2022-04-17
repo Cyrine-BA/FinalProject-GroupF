@@ -1,6 +1,6 @@
 ### FinalProject-GroupF--1-
 
-# O'college
+# O'College
 This game is to be used for leisure purposes. The user controls a fictional character who happens to be a student at Smith College. 
 The character would have multiple interactions with Smith students, five-college students, professors, staff, etc.. Each time, the game gives the user the choice between two options (eg: to do homework vs party), and that choice will change the rest of the events.
 We expect different users to make different choices and therefore have various game experiences. Throughout the game, there's a score checker that keeps track of how well the character is doing academically, physically, socially, and emotionally. 
