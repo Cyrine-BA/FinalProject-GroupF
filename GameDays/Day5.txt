@@ -1,25 +1,25 @@
- It's Sunday today! Do you want to wake up early and do some workout? 
-Y Yes. Exercise always starts a good day. You run for 5km and feel energetic now. You return back to your dorm and take a shower. Do you want to do a makeup? 
-N You have a beauty sleep! Do you want to do a makeup after you wake up? 
-YY Of course! Makeup will make me feel confident. You decide to go to the Ford Hall and study now. At the moment, you receive a call from your friend Chris. She invites you to see her A cappella show at Chapin Lawn. Do you want to go? 
-YN No. I am feeling good with myself. I decide to go to Ford Hall and study now. At the moment, you receive a call from your friend Chris. She invites you to see her A cappella show at Chapin Lawn. Do you want to go? 
-NY Of course! Makeup will make me feel confident. You decide to go to the Ford Hall and study now. At the moment, you receive a call from your friend Chris. She invites you to see her A cappella show at Chapin Lawn. Do you want to go? 
-NN No. I am feeling good with myself. I decide to go to Ford Hall and study now. At the moment, you receive a call from your friend Chris. She invites you to see her A cappella show at Chapin Lawn. Do you want to go? 
-YYY I will! You go to see her show and spend a good time hanging out with friends. They invited you to go to a party with them afterward. Do you want to go? 
-YYYY Why not? You meet a lot of interesting people. You take a lot of photos together and post them on instagram. 
-YYYN You choose to study in Ford then. You study for a while but then you feel tired. You go back to your dorm and have a good sleep. 
-YYN I will not. You have a lot of work to do this weekend. You promise that you will go to see her show next time. You head to the Ford Hall and finish all your homework. You received a phone call from Thu. She asked you to have dinner at Cutter-Z together. However, you still have your work unfinished. Do you want to go with her? 
-YYNY Yes! You have some fried chicken together. She tells you some advice in regisration and recommends you some good courses. 
-YYNN No, you prefer to finish your work first. Congratulations! You get get the work done. 
-NYY I will! You go to see her show and spend a good time hanging out with friends. They invited you to go to a party with them afterward. Do you want to go? 
-NYN I will not. You have a lot of work to do this weekend. You promise that you will go to see her show next time. You head to the Ford Hall and finish all your homework. You received a phone call from Thu. She asked you to have dinner at Cutter-Z together. However, you still have your work unfinished. Do you want to go with her? 
-NNY I will! You go to see her show and spend a good time hanging out with friends. They invited you to go to a party with them afterward. Do you want to go? 
-NNN I will not. You have a lot of work to do this weekend. You promise that you will go to see her show next time. You head to the Ford Hall and finish all your homework. You received a phone call from Thu. She asked you to have dinner at Cutter-Z together. However, you still have your work unfinished. Do you want to go with her? 
-NYYY Why not? You meet a lot of interesting people. You take a lot of photos together and post them on instagram. 
-NYYN You choose to study in Ford then. You study for a while but then you feel tired. You go back to your dorm and have a good sleep. 
-NYNY Yes! You have some fried chicken together. She tells you some advice in regisration and recommends you some good courses. 
-NYNN No, you prefer to finish your work first. Congratulations! You get get the work done. 
-NNYY Why not? You meet a lot of interesting people. You take a lot of photos together and post them on instagram. 
-NNYN You choose to study in Ford then. You study for a while but then you feel tired. You go back to your dorm and have a good sleep. 
-NNNY Yes! You have some fried chicken together. She tells you some advice in regisration and recommends you some good courses. 
-NNNN No, you prefer to finish your work first. Congratulations! You get get the work done. 
+ It's Sunday today! Do you want to wake up early and do some workout? @Pictures/Day5.1.jpeg
+Y Yes. Exercise always starts a good day. You run for 5km and feel energetic now. You return back to your dorm and take a shower. Do you want to do a makeup? @Pictures/Day5.2.jpeg
+N You have a beauty sleep! Do you want to do a makeup after you wake up? @Pictures/Day5.2.jpeg
+YY Of course! Makeup will make me feel confident. You decide to go to the Ford Hall and study now. At the moment, you receive a call from your friend Chris. She invites you to see her A cappella show at Chapin Lawn. Do you want to go? @Pictures/Day5.3.jpeg
+YN No. I am feeling good with myself. I decide to go to Ford Hall and study now. At the moment, you receive a call from your friend Chris. She invites you to see her A cappella show at Chapin Lawn. Do you want to go? @Pictures/Day5.3.jpeg
+NY Of course! Makeup will make me feel confident. You decide to go to the Ford Hall and study now. At the moment, you receive a call from your friend Chris. She invites you to see her A cappella show at Chapin Lawn. Do you want to go? @Pictures/Day5.3.jpeg
+NN No. I am feeling good with myself. I decide to go to Ford Hall and study now. At the moment, you receive a call from your friend Chris. She invites you to see her A cappella show at Chapin Lawn. Do you want to go? @Pictures/Day5.3.jpeg
+YYY I will! You go to see her show and spend a good time hanging out with friends. They invited you to go to a party with them afterward. Do you want to go? @Pictures/Day5.4.jpeg
+YYYY Why not? You meet a lot of interesting people. You take a lot of photos together and post them on instagram. @Pictures/Day5.5.jpeg
+YYYN You choose to study in Ford then. You study for a while but then you feel tired. You go back to your dorm and have a good sleep. @Pictures/Day5.6.jpeg
+YYN I will not. You have a lot of work to do this weekend. You promise that you will go to see her show next time. You head to the Ford Hall and finish all your homework. You received a phone call from Thu. She asked you to have dinner at Cutter-Z together. However, you still have your work unfinished. Do you want to go with her? @Pictures/Day5.7.jpeg
+YYNY Yes! You have some fried chicken together. She tells you some advice in regisration and recommends you some good courses. @Pictures/Day5.8.jpeg
+YYNN No, you prefer to finish your work first. Congratulations! You get get the work done. @Pictures/Day5.9.jpeg
+NYY I will! You go to see her show and spend a good time hanging out with friends. They invited you to go to a party with them afterward. Do you want to go? @Pictures/Day5.4.jpeg
+NYN I will not. You have a lot of work to do this weekend. You promise that you will go to see her show next time. You head to the Ford Hall and finish all your homework. You received a phone call from Thu. She asked you to have dinner at Cutter-Z together. However, you still have your work unfinished. Do you want to go with her? @Pictures/Day5.7.jpeg
+NNY I will! You go to see her show and spend a good time hanging out with friends. They invited you to go to a party with them afterward. Do you want to go? @Pictures/Day5.4.jpeg
+NNN I will not. You have a lot of work to do this weekend. You promise that you will go to see her show next time. You head to the Ford Hall and finish all your homework. You received a phone call from Thu. She asked you to have dinner at Cutter-Z together. However, you still have your work unfinished. Do you want to go with her? @Pictures/Day5.7.jpeg
+NYYY Why not? You meet a lot of interesting people. You take a lot of photos together and post them on instagram. @Pictures/Day5.5.jpeg
+NYYN You choose to study in Ford then. You study for a while but then you feel tired. You go back to your dorm and have a good sleep. @Pictures/Day5.6.jpeg
+NYNY Yes! You have some fried chicken together. She tells you some advice in regisration and recommends you some good courses. @Pictures/Day5.8.jpeg
+NYNN No, you prefer to finish your work first. Congratulations! You get get the work done. @Pictures/Day5.9.jpeg
+NNYY Why not? You meet a lot of interesting people. You take a lot of photos together and post them on instagram. @Pictures/Day5.5.jpeg
+NNYN You choose to study in Ford then. You study for a while but then you feel tired. You go back to your dorm and have a good sleep. @Pictures/Day5.6.jpeg
+NNNY Yes! You have some fried chicken together. She tells you some advice in regisration and recommends you some good courses. @Pictures/Day5.8.jpeg
+NNNN No, you prefer to finish your work first. Congratulations! You get get the work done. @Pictures/Day5.9.jpeg
