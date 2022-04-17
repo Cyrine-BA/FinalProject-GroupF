@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-
+import javax.swing.OverlayLayout;
 import java.awt.Dimension;
 import java.awt.Image;
 
@@ -47,6 +47,8 @@ public class Window extends JFrame{
     text.setAlignmentX(0.5f);
     text.setAlignmentY(0.5f);
     text.setVerticalAlignment(text.CENTER);
+    text.setLayout(new FlowLayout());
+    
 
 
     //Add exit and pause to the experiment layout
@@ -58,7 +60,7 @@ public class Window extends JFrame{
     choices.add(noButton);
     
     // add the bakcground image
-    image.add(text, BorderLayout.CENTER );
+    image.add(text);
 
 
     //adds all panels to the frame
@@ -154,8 +156,10 @@ public class Window extends JFrame{
     ImageIcon temp = new ImageIcon(imgFile);
     Image temp2 = temp.getImage().getScaledInstance((int)600, (int)400, Image.SCALE_SMOOTH);
     ImageIcon img = new ImageIcon(temp2);
-    text.setText(message);
+    text.setText("<html><p style=\"width:400px\">"+message+"</p></html>");
     text.setIcon(img);
+    text.setVerticalTextPosition(JLabel.BOTTOM);
+    text.setHorizontalTextPosition(JLabel.CENTER);
 
   }
 
@@ -175,10 +179,10 @@ public class Window extends JFrame{
    *. @param imgFile the path to the image
    */
   private  void createAndShowGUI(String imgFile, String message) {
-    Dimension winsize = new Dimension(600,400);
+    Dimension winsize = new Dimension(600,600);
     
-    //Create and set up the window.
-    // Window frame = new Window("O' College");
+    //setting for the window
+    this.setResizable(false);
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     //Set up the content panel
     this.setUp();

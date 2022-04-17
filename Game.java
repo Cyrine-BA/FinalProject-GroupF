@@ -23,14 +23,14 @@ public class Game {
         /**holds the current position of the decison tree */
         DecisionTree current = dayTree;
 
-        // show the window 
-        win.showWindow("Pictures/Welcome.jpeg", "Welcome to Smith!!");
-        // wait for 3 seconds
-        try { 
-          Thread.sleep(3000);               
-        } catch(InterruptedException ex) {
-          Thread.currentThread().interrupt();
-        }
+        // // show the window 
+        // win.showWindow("Pictures/Welcome.jpeg", "Welcome to Smith!!");
+        // // wait for 3 seconds
+        // try { 
+        //   Thread.sleep(3000);               
+        // } catch(InterruptedException ex) {
+        //   Thread.currentThread().interrupt();
+        // }
 
         while (!current.isLeaf()){
           /** holds the prompt */
@@ -72,7 +72,7 @@ public class Game {
         }
 
         /** holds last line */
-        String prompt = current.getData();
+        String prompt = current.getData().substring(0, current.getData().indexOf("@"));
 
         /** holds the image path */
         String imgFile = current.getData().substring(current.getData().indexOf("@")+1);
@@ -101,10 +101,27 @@ public class Game {
     }
 
     public static void main (String[] args) throws InterruptedException{
-        // for (int i=1; i<9; i++){
-        //     runDay(1);
-        // }
-        runDay(1);
+      // show the window 
+      win.showWindow("Pictures/Welcome.jpeg", "Welcome to Smith!!");
+      // wait for 3 seconds
+      try { 
+        Thread.sleep(3000);               
+      } catch(InterruptedException ex) {
+        Thread.currentThread().interrupt();
+      }
+
+
+      for (int i=1; i<3; i++){
+        runDay(i);
+        // wait for 3 seconds
+        try { 
+          Thread.sleep(3000);               
+        } catch(InterruptedException ex) {
+          Thread.currentThread().interrupt();
+        }
+        
+      }
+      System.exit(0);
         
     }
     
