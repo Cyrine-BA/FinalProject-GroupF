@@ -115,9 +115,11 @@ public class Window extends JFrame{
     exitButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
         String command = "Click Exit!!";
-
         //Check the selection
         System.out.println(command);
+
+        // exit the game
+        System.exit(0);
 
       }
     });
@@ -129,6 +131,8 @@ public class Window extends JFrame{
 
         //Check the selection
         System.out.println(command);
+
+        
       }
     });
 
@@ -168,7 +172,7 @@ public class Window extends JFrame{
    *. @param imgFile the path to the image
    */
   private  void createAndShowGUI(String imgFile, String message) {
-    Dimension winsize = new Dimension(600,600);
+    Dimension winsize = new Dimension(600,700);
     
     //setting for the window
     this.setResizable(false);
