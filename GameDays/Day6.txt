@@ -7,13 +7,13 @@ NY Library is a good place to focus! On your way to the library, you go pass the
 NN This is a no-class day. I wish I could have plenty of rest. You decide to stay in dorm and have a phone call to your parents. At the moment, your friend Thu texted you to have lunch at UMass together. Do you want to go? @Pictures/Day6.6.jpeg
 YYY This is a good choice. You prefer to spend some time with your friend. Cindy and you have a good conversation. However, you did not pay attention to the time. The office hour is already began. There will always be a lot of students during the office hour. You will not have a chance to ask a specific question. Do you still want to go? @Pictures/Day6.8.jpeg
 YYN You choose to grab and go. You want to arrive the office hour on time. There will always be a lot of students during the office hour. You don't want to miss a chance to ask a specific question. Luckily, there is only two students in the office hour. You wait for a while and get the chance to ask the professor. You solve all your questions in the homework. You are feeling tired now, do you want to go to library? @Pictures/Day6.7.jpeg
-YNY This is a no-class day. I wish I could have plenty of rest. You go back to your dorm and take a restful sleep.  @Pictures/Day6.5.jpeg
-YNN You choose to go to the library instead. However, you are so sleepy. You learn for a while and then go back to your dorm to have a rest.  @Pictures/Day6.5.jpeg
-NYY You grab some food and coffee from the dining hall. You focus on your homework at the library. You finish most of your homework.  @Pictures/Day6.9.jpeg
-NYN It is not worth to wait for such a long time. You head directly to the library. You learn for a while and started to distract from your work. You decide to go back to your dorm and have a rest.  @Pictures/Day6.9.jpeg
-NNY I would love to get some food from UMass! You have a wonderful lunch with Thu! You also have some food that comes from your hometown.  @Pictures/Day6.10.jpeg
-NNN UMass is too far and you don't want to spend some time on commute. You invited Thu to have a dinner at Comstock instead, where it supplies stir fry. She accepts your invitation and both of you get a wonderful dinner.  @Pictures/Day6.10.jpeg
-YYYY Yes I will. You did not get a chance to ask a specific question, but you learn a lot from other questions. @Pictures/Day6.7.jpeg
-YYYN It is not worth to wait in line. You choose to focus on your homework at library. However, you feel sleepy later and go back to your dorm. Have a good rest! @Pictures/Day6.9.jpeg
-YYNY You go to the library and study for a while. However, you feel sleepy later and go back to your dorm. Have a good rest! @Pictures/Day6.9.jpeg
-YYNN You choose to go back to your dorm. You have a restful sleep!  @Pictures/Day6.5.jpeg
+YNY This is a no-class day. I wish I could have plenty of rest. You go back to your dorm and take a restful sleep.  @Pictures/Day6.5.jpeg#P1
+YNN You choose to go to the library instead. However, you are so sleepy. You learn for a while and then go back to your dorm to have a rest.  @Pictures/Day6.5.jpeg#P0
+NYY You grab some food and coffee from the dining hall. You focus on your homework at the library. You finish most of your homework.  @Pictures/Day6.9.jpeg#A1
+NYN It is not worth to wait for such a long time. You head directly to the library. You learn for a while and started to distract from your work. You decide to go back to your dorm and have a rest.  @Pictures/Day6.9.jpeg#P1
+NNY I would love to get some food from UMass! You have a wonderful lunch with Thu! You also have some food that comes from your hometown.  @Pictures/Day6.10.jpeg#S1
+NNN UMass is too far and you don't want to spend some time on commute. You invited Thu to have a dinner at Comstock instead, where it supplies stir fry. She accepts your invitation and both of you get a wonderful dinner.  @Pictures/Day6.10.jpeg#S1
+YYYY Yes I will. You did not get a chance to ask a specific question, but you learn a lot from other questions. @Pictures/Day6.7.jpeg#A1
+YYYN It is not worth to wait in line. You choose to focus on your homework at library. However, you feel sleepy later and go back to your dorm. Have a good rest! @Pictures/Day6.9.jpeg#P0
+YYNY You go to the library and study for a while. However, you feel sleepy later and go back to your dorm. Have a good rest! @Pictures/Day6.9.jpeg#P0
+YYNN You choose to go back to your dorm. You have a restful sleep!  @Pictures/Day6.5.jpeg#P1

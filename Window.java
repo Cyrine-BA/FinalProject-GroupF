@@ -143,7 +143,7 @@ public class Window extends JFrame{
    *. @param imgFile the path of the image we want to work with
    *. @param message the text
   */
-  public void updateComponents(String imgFile, String message) {
+  public void updateComponents(String imgFile, String message, boolean show) {
     
     ImageIcon temp = new ImageIcon(imgFile);
     Image temp2 = temp.getImage().getScaledInstance((int)600, (int)400, Image.SCALE_SMOOTH);
@@ -152,6 +152,7 @@ public class Window extends JFrame{
     text.setIcon(img);
     text.setVerticalTextPosition(JLabel.BOTTOM);
     text.setHorizontalTextPosition(JLabel.CENTER);
+    choices.setVisible(show);
 
   }
   
@@ -179,7 +180,7 @@ public class Window extends JFrame{
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     //Set up the content panel
     this.setUp();
-    this.updateComponents(imgFile, message);
+    this.updateComponents(imgFile, message, false);
           
     this.setPreferredSize(winsize);
     this.setMinimumSize(winsize);
