@@ -1,42 +1,29 @@
- You are going to have a cheerleading practice today. You are not proficient in doing cartwheel. Do you want to practice cartwheel before the formal practice? 
-Y Since you practice cartwheel beforehand, you do a good cartwheel during the formal practice. Your stunt group is proud of your progress. Now it's time to practice with your stunt group. Do you want to practice halfup or swedish fall? 
-N You are still not proficient in cartwheel. The president spots you and teaches you how to do it. However, you are still afraid of being upside down. You can continue practicing the cartwheel or you can practice with your stunt group. Do you want to continue practicing with cartwheel? 
-YY halfup is a good start. Your group did a successful halfup. Now what do you want practice next, another halfup or swedish fall? 
-YN swedish fall is a good start. Your group did a successful swedish fall. Now what do you want practice next, another swedish fall or halfup? 
-NY It is important to get familiar with a successful cartwheel. You practice the cartwheel alone for a while. Now you have to practice with your stunt group. You can do either swedish fall or half up. Do you want to do swedish fall? 
-NN You decide to start practice with your stunt group. 
+ You plan to take a self-scheduled exam today, but your best friend Maya asks you to go shopping with her. Do you still want to take the exam now? @Pictures/Day8.1.jpeg
+Y Academic score prioritize! I could go shopping with her at any other time. After taking the exam, you could grab an ice cream in downtown or play video games at dorm. Do you want to get an ice cream? @Pictures/Day8.2.jpeg
+N I prefer to relax first. I have been studying so hard for this exam. It is a good idea to go shopping with my bestie and release my pressure before the exam. After shopping, you could take the exam now or review it first. Do you want to take the exam now? @Pictures/Day8.3.jpeg
+YY Ice cream is my favorite! I will go and grab a mint chocolate flavor. Do you want to invite Maya to go with you? @Pictures/Day8.4.jpeg 
+YN I'd love to try the new video game published on Steam! Do you want to invite Maya to play with you together? @Pictures/Day8.5.jpeg 
+NY I am confident with myself! I prefer to finish it soon and enjoy the rest of my weekend! After taking the exam, you could grab an ice cream in downtown or play video games at dorm. Do you want to get an ice cream? @Pictures/Day8.2.jpeg
+NN I am going to review it for a while and then take it. You go to the library and meet Rebeca. She is also preparing for the exam. Do you want to study with her? @Pictures/Day8.6.jpeg 
+YYY You invited Maya, but she is shopping with another friend. You have to grab the ice cream alone. At the ice cream shop, you meet another student wearing Smithie Tshirt. Do you want to say hi to her? @Pictures/Day8.7.jpeg 
+YYN She is probably shopping now. You'd better not to interrupt her. You choose to get the ice cream alone. At the ice cream shop, you meet another student wearing Smithie Tshirt. Do you want to say hi to her? @Pictures/Day8.7.jpeg 
+YNY You invited Maya, but she is shopping with another friend. You play the game alone, but the game is intriguing. You have a good time! @Pictures/Day8.8.jpeg 
+YNN She is probably shopping now. You'd better not to interrupt her. You choose to play the game alone, but the game is intriguing. You have a good time! @Pictures/Day8.8.jpeg 
+NYY Ice cream is my favorite! I will go and grab a mint chocolate flavor. Do you want to invite Maya to go with you? @Pictures/Day8.4.jpeg 
+NYN I'd love to try the new video game published on Steam! Do you want to invite Maya to play with you together? @Pictures/Day8.9.jpeg 
+NNY Why not? A study buddy is always helpful! You are spending a good time together reviewing the material. Now you are more confident with the exam. After you finish the exam, you feel tired. Do you want to have a dinner before go to sleep? @Pictures/Day8.10.jpeg 
+NNN It is a good idea. Studying alone can help you focus. Now you are more confident with the exam. After you finish the exam, you feel tired. Do you want to have a dinner before go to sleep? @Pictures/Day8.10.jpeg 
+YYYY Why not? The girl's name is Medha. You have lots of interests in common. Both of you like minted chocolate. You enjoy chating with her. Now, you have another good friend! @Pictures/Day8.11.jpeg 
+YYYN She is listening to her music now. It would be better not to interrupt her. You have your favorite ice cream and go to bed early today. @Pictures/Day8.12.jpeg 
+YYNY Why not? The girl's name is Medha. You have lots of interests in common. Both of you like minted chocolate. You enjoy chating with her. Now, you have another good friend! @Pictures/Day8.11.jpeg 
+YYNN She is listening to her music now. It would be better not to interrupt her. You have your favorite ice cream and go to bed early today. @Pictures/Day8.12.jpeg 
+NYYY You invited Maya, but she is shopping with another friend. You get your favorite ice cream and go to bed early today. @Pictures/Day8.12.jpeg 
+NYYN She is probably shopping now. You'd better not to interrupt her. You get your favorite ice cream and go to bed early today. @Pictures/Day8.12.jpeg 
+NYNY You invited Maya, but she is shopping with another friend. You choose to play the game alone, but the game is intriguing. You have a good time! @Pictures/Day8.8.jpeg 
+NYNN She is probably shopping now. You'd better not to interrupt her. You choose to play the game alone, but the game is intriguing. You have a good time! @Pictures/Day8.8.jpeg 
+NNYY During your dinner, you get some hamburgers, which taste really nice. You have a good sleep then. @Pictures/Day8.12.jpeg 
+NNYN It is time to sleep. Good night! @Pictures/Day8.12.jpeg 
+NNNY During your dinner, you get some hamburgers, which taste really nice. You have a good sleep then. @Pictures/Day8.12.jpeg 
+NNNN It is time to sleep. Good night! @Pictures/Day8.12.jpeg 
 
 
-YYY Oh no! You fall from the top this time. Luckily you don't hurt your head. You need to take a break now. 
-YYN Your group did a successful swedish fall. The president invites us to have a dinner together. Do you want to go?
-YYNY Of course! Cheers bonding! You enjoy the dinner with your cheers friend. 
-YYNN You prefer not because you want to spend some time on your homework. You finished your homework today. Good Job! 
-
-YNY Your group did a successful swedish fall. The president invites us to have a dinner together. Do you want to go?
-YNYY Of course! Cheers bonding! You enjoy the dinner with your cheers friend. 
-YNYN You prefer not because you want to spend some time on your homework. You finished your homework today. Good Job! 
-YNN Your group did a successful halfup. The president invites us to have a dinner together. Do you want to go?
-YNNY Of course! Cheers bonding! You enjoy the dinner with your cheers friend. 
-YNNN You prefer not because you want to spend some time on your homework. You finished your homework today. Good Job! 
-YNN 
-
-
-
-
-
-
-
-YYN  You feel a little bit tired now. Do you want to go back to your dorm now? 
-YNY  Then, you find out you miss a text message from your friend Thu. She texted you to have lunch at UMass together. Do you want to invite her to have a dinner together in the dining hall? 
-YNN You choose to go to the library instead. On you way to the library, you go pass the compass cafe. Do you want to order a cup of coffee? 
-YYYY It is always better to go than not to go. You head toward the Bass Hall. Not surprisingly, you see a lot of students waiting for questions. You do not get the chance to ask for a specific question. However, you learn a lot from other students' questions. It has been a busy day, you decide to go back to your dorm and have a sleep. 
-YYYN It is not worth to wait for a long time. You head toward library and focus on your other homework. You did a lot of homework. It has been a busy day, you decide to go back to your dorm and have a sleep. 
-YYNY This is a no-class day. I wish I could have plenty of rest. You go back to your dorm and take a nap. You are feeling much better now. You did some homework in the evening and have a good rest at night. 
-YYNN You choose to go to the library instead. However, you are so sleepy. You learn for a while and then go back to your dorm to have a good rest. 
-YNY 
-
-
-
-On your way to the Bass Hall, you met your friend Cindy, do you want to stop and chat with her?
-YY Cindy: Hi! How are you! We haven't seen each other for a long time. Do you want to have breakfast together? 
-N It is too early in the morning. I prefer to sleep more. Probably I will ask those questions after class. 
