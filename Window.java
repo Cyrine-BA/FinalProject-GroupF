@@ -23,7 +23,7 @@ public class Window extends JFrame{
   JButton yesButton = new JButton("YES");
   JButton noButton = new JButton("NO");
   JButton exitButton = new JButton("Exit");
-  JButton pauseButton = new JButton("Pause");
+  JButton helpButton = new JButton("Help");
   JButton anyButton = new JButton("Invisible button");
   
   /** checks for the user's response */
@@ -36,6 +36,15 @@ public class Window extends JFrame{
   }
   /** method to set up our window components */
   public void setUp() {
+    //set the buttons background and font
+    yesButton.setBackground(Color.GREEN);
+    yesButton.setOpaque(true);
+    yesButton.setFont(new Font("SansSerif", Font.BOLD, 12));
+    noButton.setOpaque(true);
+    noButton.setBackground(Color.RED);
+    noButton.setFont(new Font("SansSerif", Font.BOLD, 12));
+
+
     // set the buttons and image panels
     controls.setLayout(new FlowLayout());
     image.setLayout(new FlowLayout());
@@ -51,9 +60,9 @@ public class Window extends JFrame{
     text.setLayout(new FlowLayout());
     
 
-    //Add exit and pause to the experiment layout
+    //Add exit and help to the experiment layout
     controls.add(exitButton);
-    controls.add(pauseButton);
+    controls.add(helpButton);
 
     //Add  yes and no controls to set up the component orientation in the experiment layout
     choices.add(yesButton);
@@ -67,15 +76,16 @@ public class Window extends JFrame{
     this.getContentPane().add(controls, BorderLayout.NORTH);
     this.getContentPane().add(image, BorderLayout.CENTER);
     this.getContentPane().add(choices, BorderLayout.SOUTH);
-    // panel.add(message, BorderLayout.CENTER);
-
+ 
 
     //Process the Yes button press
     yesButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
+        //for debugging
         String command = "Click yes!!";
-        //Check the selection
         System.out.println(command);
+
+        //click on anyButton
         anyButton.setActionCommand("yes clicked");
         anyButton.doClick();
       }
@@ -84,9 +94,11 @@ public class Window extends JFrame{
     //Process the No button press
     noButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
+        //for debugging
         String command = "Click no!!";
-        //Check the selection
         System.out.println(command);
+
+        // click on anyButton
         setResponse("no");
         anyButton.setActionCommand("no clicked");
         anyButton.doClick();
@@ -95,7 +107,10 @@ public class Window extends JFrame{
 
     anyButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e) {
+        //for debugging
         System.out.println(anyButton.getActionCommand());
+
+        //process yes vs no click
         if (anyButton.getActionCommand().equals("yes clicked")){
           setResponse("yes");
           System.out.println(getResponse());
@@ -111,11 +126,11 @@ public class Window extends JFrame{
     });
 
 
-    //Process the Exit button press => still in progress
+    //Process the Exit button press 
     exitButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
+        //for debugging
         String command = "Click Exit!!";
-        //Check the selection
         System.out.println(command);
 
         // exit the game
@@ -124,14 +139,17 @@ public class Window extends JFrame{
       }
     });
 
-    //Process the Pause button press => still in progress
-    pauseButton.addActionListener(new ActionListener(){
+    //Process the restart button press 
+    helpButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
-        String command = "Click Pause!!";
 
-        //Check the selection
+        //for debugigng
+        String command = "help!!";
         System.out.println(command);
-
+        
+        // show them their scores
+        String helpMsg = "Read the prompt and press the yes or no button depending on your decision. There are 8 days in the game by the end of which you'll get your player report";
+        JOptionPane.showMessageDialog(Game.win, "<html><p style=\"width:400px\">"+helpMsg+"</p></html>");
         
       }
     });
@@ -144,11 +162,15 @@ public class Window extends JFrame{
    *. @param message the text
   */
   public void updateComponents(String imgFile, String message, boolean show) {
-    
+    // change the background image 
     ImageIcon temp = new ImageIcon(imgFile);
     Image temp2 = temp.getImage().getScaledInstance((int)600, (int)400, Image.SCALE_SMOOTH);
     ImageIcon img = new ImageIcon(temp2);
+
+    //change the text
     text.setText("<html><p style=\"width:400px\">"+message+"</p></html>");
+
+    //update
     text.setIcon(img);
     text.setVerticalTextPosition(JLabel.BOTTOM);
     text.setHorizontalTextPosition(JLabel.CENTER);
@@ -160,6 +182,8 @@ public class Window extends JFrame{
   public String getResponse() {
     return this.response;
   }
+
+
   /** sets the response field */
   public String setResponse(String str) {
     this.response = str;

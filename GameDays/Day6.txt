@@ -11,8 +11,8 @@ YNY This is a no-class day. I wish I could have plenty of rest. You go back to y
 YNN You choose to go to the library instead. However, you are so sleepy. You learn for a while and then go back to your dorm to have a rest.  @Pictures/Day6.5.jpeg#P0
 NYY You grab some food and coffee from the dining hall. You focus on your homework at the library. You finish most of your homework.  @Pictures/Day6.9.jpeg#A1
 NYN It is not worth to wait for such a long time. You head directly to the library. You learn for a while and started to distract from your work. You decide to go back to your dorm and have a rest.  @Pictures/Day6.9.jpeg#P1
-NNY I would love to get some food from UMass! You have a wonderful lunch with Thu! You also have some food that comes from your hometown.  @Pictures/Day6.10.jpeg#S1
-NNN UMass is too far and you don't want to spend some time on commute. You invited Thu to have a dinner at Comstock instead, where it supplies stir fry. She accepts your invitation and both of you get a wonderful dinner.  @Pictures/Day6.10.jpeg#S1
+NNY I would love to get some food from UMass! You have a wonderful lunch with Thu! You also have some food that comes from your hometown.  @Pictures/Day6.10.png#S1
+NNN UMass is too far and you don't want to spend some time on commute. You invited Thu to have a dinner at Comstock instead, where it supplies stir fry. She accepts your invitation and both of you get a wonderful dinner.  @Pictures/Day6.10.png#S1
 YYYY Yes I will. You did not get a chance to ask a specific question, but you learn a lot from other questions. @Pictures/Day6.7.jpeg#A1
 YYYN It is not worth to wait in line. You choose to focus on your homework at library. However, you feel sleepy later and go back to your dorm. Have a good rest! @Pictures/Day6.9.jpeg#P0
 YYNY You go to the library and study for a while. However, you feel sleepy later and go back to your dorm. Have a good rest! @Pictures/Day6.9.jpeg#P0

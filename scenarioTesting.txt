@@ -1,0 +1,57 @@
+This file holds our testing of all possible scenarios in the game 
+*** Day1 Outcomes:
+P += 10
+P -= 10
+A += 10
+M += 10
+S += 10
+S -= 10
+*** Day2 Outcomes:
+A += 10
+M += 10
+M -= 10
+S += 10
+*** Day3 Outcomes:
+P += 10
+A += 10
+M += 10
+M -= 10
+S += 10
+*** Day4 Outcomes:
+P += 10
+P -= 10
+A += 10
+M += 10
+M -= 10
+S += 10
+S -= 10
+*** Day5 Outcomes:
+A += 10
+S += 10
+*** Day6 Outcomes:
+P += 10
+P -= 10
+A += 10
+S += 10
+*** Day7 Outcomes:
+P += 10
+P -= 10
+A += 10
+M += 10
+S += 10
+*** Day8 Outcomes:
+P += 10
+P -= 10
+M += 10
+S += 10
+*** maximum physical score available: 110
+*** minimum physical score available: 0
+*** maximum mental score available: 110
+*** minimum mental score available: 20
+*** maximum social score available: 130
+*** minimum social score available: 30
+*** maximum academics score available: 120
+*** minimum academics score available: 50
+*** can't finish with same  initialized scores 
+
+

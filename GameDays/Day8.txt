@@ -7,21 +7,21 @@ NY I am confident with myself! I prefer to finish it soon and enjoy the rest of 
 NN I am going to review it for a while and then take it. You go to the library and meet Rebeca. She is also preparing for the exam. Do you want to study with her? @Pictures/Day8.6.jpeg 
 YYY You invited Maya, but she is shopping with another friend. You have to grab the ice cream alone. At the ice cream shop, you meet another student wearing Smithie Tshirt. Do you want to say hi to her? @Pictures/Day8.7.jpeg 
 YYN She is probably shopping now. You'd better not to interrupt her. You choose to get the ice cream alone. At the ice cream shop, you meet another student wearing Smithie Tshirt. Do you want to say hi to her? @Pictures/Day8.7.jpeg 
-YNY You invited Maya, but she is shopping with another friend. You play the game alone, but the game is intriguing. You have a good time! @Pictures/Day8.8.jpeg 
-YNN She is probably shopping now. You'd better not to interrupt her. You choose to play the game alone, but the game is intriguing. You have a good time! @Pictures/Day8.8.jpeg 
+YNY You invited Maya, but she is shopping with another friend. You play the game alone, but the game is intriguing. You have a good time! @Pictures/Day8.8.jpeg#M1
+YNN She is probably shopping now. You'd better not to interrupt her. You choose to play the game alone, but the game is intriguing. You have a good time! @Pictures/Day8.8.jpeg#M1
 NYY Ice cream is my favorite! I will go and grab a mint chocolate flavor. Do you want to invite Maya to go with you? @Pictures/Day8.4.jpeg 
 NYN I'd love to try the new video game published on Steam! Do you want to invite Maya to play with you together? @Pictures/Day8.9.jpeg 
 NNY Why not? A study buddy is always helpful! You are spending a good time together reviewing the material. Now you are more confident with the exam. After you finish the exam, you feel tired. Do you want to have a dinner before go to sleep? @Pictures/Day8.10.jpeg 
 NNN It is a good idea. Studying alone can help you focus. Now you are more confident with the exam. After you finish the exam, you feel tired. Do you want to have a dinner before go to sleep? @Pictures/Day8.10.jpeg 
-YYYY Why not? The girl's name is Medha. You have lots of interests in common. Both of you like minted chocolate. You enjoy chating with her. Now, you have another good friend! @Pictures/Day8.11.jpeg 
-YYYN She is listening to her music now. It would be better not to interrupt her. You have your favorite ice cream and go to bed early today. @Pictures/Day8.12.jpeg 
-YYNY Why not? The girl's name is Medha. You have lots of interests in common. Both of you like minted chocolate. You enjoy chating with her. Now, you have another good friend! @Pictures/Day8.11.jpeg 
-YYNN She is listening to her music now. It would be better not to interrupt her. You have your favorite ice cream and go to bed early today. @Pictures/Day8.12.jpeg 
-NYYY You invited Maya, but she is shopping with another friend. You get your favorite ice cream and go to bed early today. @Pictures/Day8.12.jpeg 
-NYYN She is probably shopping now. You'd better not to interrupt her. You get your favorite ice cream and go to bed early today. @Pictures/Day8.12.jpeg 
-NYNY You invited Maya, but she is shopping with another friend. You choose to play the game alone, but the game is intriguing. You have a good time! @Pictures/Day8.8.jpeg 
-NYNN She is probably shopping now. You'd better not to interrupt her. You choose to play the game alone, but the game is intriguing. You have a good time! @Pictures/Day8.8.jpeg 
-NNYY During your dinner, you get some hamburgers, which taste really nice. You have a good sleep then. @Pictures/Day8.12.jpeg 
-NNYN It is time to sleep. Good night! @Pictures/Day8.12.jpeg 
-NNNY During your dinner, you get some hamburgers, which taste really nice. You have a good sleep then. @Pictures/Day8.12.jpeg 
-NNNN It is time to sleep. Good night! @Pictures/Day8.12.jpeg 
+YYYY Why not? The girl's name is Medha. You have lots of interests in common. Both of you like minted chocolate. You enjoy chating with her. Now, you have another good friend! @Pictures/Day8.11.jpeg#S1
+YYYN She is listening to her music now. It would be better not to interrupt her. You have your favorite ice cream and go to bed early today. @Pictures/Day8.12.jpeg#M1
+YYNY Why not? The girl's name is Medha. You have lots of interests in common. Both of you like minted chocolate. You enjoy chating with her. Now, you have another good friend! @Pictures/Day8.11.jpeg#S1
+YYNN She is listening to her music now. It would be better not to interrupt her. You have your favorite ice cream and go to bed early today. @Pictures/Day8.12.jpeg#M1
+NYYY You invited Maya, but she is shopping with another friend. You get your favorite ice cream and go to bed early today. @Pictures/Day8.12.jpeg#M1
+NYYN She is probably shopping now. You'd better not to interrupt her. You get your favorite ice cream and go to bed early today. @Pictures/Day8.12.jpeg#M1
+NYNY You invited Maya, but she is shopping with another friend. You choose to play the game alone, but the game is intriguing. You have a good time! @Pictures/Day8.8.jpeg#M1
+NYNN She is probably shopping now. You'd better not to interrupt her. You choose to play the game alone, but the game is intriguing. You have a good time! @Pictures/Day8.8.jpeg#M1
+NNYY During your dinner, you get some hamburgers, which taste really nice. You have a good sleep then. @Pictures/Day8.12.jpeg#P1
+NNYN It is time to sleep. Good night! @Pictures/Day8.12.jpeg#P0
+NNNY During your dinner, you get some hamburgers, which taste really nice. You have a good sleep then. @Pictures/Day8.12.jpeg#P1
+NNNN It is time to sleep. Good night! @Pictures/Day8.12.jpeg#P0
