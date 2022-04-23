@@ -25,5 +25,3 @@ NNYY During your dinner, you get some hamburgers, which taste really nice. You h
 NNYN It is time to sleep. Good night! @Pictures/Day8.12.jpeg 
 NNNY During your dinner, you get some hamburgers, which taste really nice. You have a good sleep then. @Pictures/Day8.12.jpeg 
 NNNN It is time to sleep. Good night! @Pictures/Day8.12.jpeg 
-
-
