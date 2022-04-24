@@ -7,6 +7,7 @@ We expect different users to make different choices and therefore have various g
 By the end of the game, the user might get rewards depending on their final performance (eg. a 4.0 GPA, a nomination for a Smith award,..)
 
 ## Installing and playing
+The game was developed and compiled using JDK 17, so we would recommend having that installed before accessing our files.
 For successful installation, make sure all the the files are included and specifically the image files that play a major role in the graphics portion of the game. 
 Once installed, the game could be run through the console by typing in the command: java Game  and the game should begin.
 
