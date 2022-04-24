@@ -48,11 +48,8 @@ public class Game {
 
       // set the window
       win.updateComponents(imgFile, prompt, true);
-
-
-      System.out.println("222222222222");
       
-      Tests.checkButton(win.yesButton);
+      Tests.checkButton(win.choices);
     
 
       //wait for response 
@@ -102,7 +99,7 @@ public class Game {
     System.out.println("academics: "+ String.valueOf(academics_score));
 
     System.out.println("33333333333");
-    Tests.checkButton(win.yesButton);
+    Tests.checkButton(win.choices);
 
 
     // sets the window
@@ -114,8 +111,7 @@ public class Game {
     // wait for 3 seconds
     try { 
       Thread.sleep(5000);        
-      System.out.println("555555555555");
-      Tests.checkButton(win.yesButton);       
+      Tests.checkButton(win.choices);       
     } catch(InterruptedException ex) {
       Thread.currentThread().interrupt();
     }
@@ -125,7 +121,7 @@ public class Game {
     try { 
       Thread.sleep(4000); 
       System.out.println("666666666666");
-      Tests.checkButton(win.yesButton);
+      Tests.checkButton(win.choices);
     } catch(InterruptedException ex) {
       Thread.currentThread().interrupt();
     }
@@ -138,8 +134,7 @@ public class Game {
     synchronized(win.anyButton) {
       try { 
           win.anyButton.wait();
-          System.out.println("777777777777");
-          Tests.checkButton(win.yesButton);
+          Tests.checkButton(win.choices);
         } catch (InterruptedException ex) {
           System.out.println("Interrupted");
         }
@@ -205,14 +200,12 @@ public class Game {
     String message = "Game over, here's your performance: "  + mental + physical + academics + social + achievement;
     System.out.println(message);
     win.updateComponents("Pictures/scores.jpeg", "<html><p style=\"width:250px\">"+message+"</p></html>", false);
-    System.out.println("888888888888");
-    Tests.checkButton(win.yesButton);
+    Tests.checkButton(win.choices);
 
     // wait for 3 seconds
     try { 
+      Tests.checkButton(win.choices);   
       Thread.sleep(5000);  
-      System.out.println("99999999999");
-      Tests.checkButton(win.yesButton);             
     } catch(InterruptedException ex) {
       Thread.currentThread().interrupt();
     }
@@ -242,8 +235,7 @@ public class Game {
     //   runDay(i);
     // }
     //TODO: test day per day to see that the images work
-    System.out.println("111111111");
-    Tests.checkButton(win.yesButton);
+    Tests.checkButton(win.choices);
     runDay(1);
 
     //display scores 

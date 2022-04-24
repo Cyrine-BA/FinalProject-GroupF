@@ -1,11 +1,9 @@
 import java.awt.Component;
 
-
 public class Tests {
 
     public static void checkButton(Component c) {
-        
-        assert c.isDisplayable(): "failed";
+        assert c.isShowing(): "failed";
         System.out.println("passed");
     }
 
@@ -58,7 +56,7 @@ public class Tests {
             assert academics >=50 && academics <= 120: "failed";
             assert social >=30 && social <= 130: "failed";
         }
-        System.out.println("pass");
+        System.out.println("Score check test passed");
     }
 
 }
