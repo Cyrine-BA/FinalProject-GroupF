@@ -1,12 +1,20 @@
 import java.awt.Component;
 
+/**
+ * class that tests the game
+ * 
+ * @author Cyrine Ben Ayed and Jessica Fend
+ * @version Spring 2022
+*/
 public class Tests {
 
+    /** Tests whether the components in windows show correctly */
     public static void checkButton(Component c) {
         assert c.isShowing(): "failed";
         System.out.println("passed");
     }
 
+    /** Keep track of scores per day to make sure they change reasonably */
     public static void checkScore(int day, int mental, int physical, int academics, int social) {
         if (day==1) {
             assert mental >=50 && mental <= 60: "failed";
