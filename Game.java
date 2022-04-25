@@ -175,10 +175,10 @@ public class Game {
   public static void displayScores(){
 
     // get each score
-    String mental = "Mental Health: " + String.valueOf(mental_score);
-    String physical = "Physcial Health: " + String.valueOf(physical_score);
-    String academics = "Academics Performance: " + String.valueOf(academics_score);
-    String social = "Social Involvment: " + String.valueOf(social_score);
+    String mental = "Mental Health: " + String.valueOf(mental_score) + "/";
+    String physical = "Physcial Health: " + String.valueOf(physical_score) + "/";
+    String academics = "Academics Performance: " + String.valueOf(academics_score) + "/";
+    String social = "Social Involvment: " + String.valueOf(social_score) + "/";
 
     // get their acievement
     String achievement = "";
