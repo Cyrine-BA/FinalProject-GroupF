@@ -48,7 +48,8 @@ public class Game {
 
       // set the window
       win.updateComponents(imgFile, prompt, true);
-      
+
+      //tests the buttons
       Tests.checkButton(win.choices);
     
 
@@ -56,8 +57,8 @@ public class Game {
       waitForEnter();
         
       // get the response 
-        
-        System.out.println(win.getResponse());
+        //for testing and debugging
+        // System.out.println(win.getResponse());
 
 
         // if they answered yes
@@ -70,7 +71,8 @@ public class Game {
 
 
         win.setResponse("");
-        System.out.println(win.getResponse());
+        // for debugging and testing
+        // System.out.println(win.getResponse());
       }
 
     /** holds last line */
@@ -83,28 +85,29 @@ public class Game {
     String score_update = current.getData().substring(current.getData().indexOf("#")+1);
 
     //for debugging 
-    System.out.println("mental: "+ String.valueOf(mental_score));
-    System.out.println("physical: "+ String.valueOf(physical_score));
-    System.out.println("social: "+ String.valueOf(social_score));
-    System.out.println("academics: "+ String.valueOf(academics_score));
+    // System.out.println("mental: "+ String.valueOf(mental_score));
+    // System.out.println("physical: "+ String.valueOf(physical_score));
+    // System.out.println("social: "+ String.valueOf(social_score));
+    // System.out.println("academics: "+ String.valueOf(academics_score));
 
     //update the score
     updateScore(score_update);
 
     //for debugging 
-    System.out.println("update:**"+ String.valueOf(score_update)+ "**");
-    System.out.println("mental: "+ String.valueOf(mental_score));
-    System.out.println("physical: "+ String.valueOf(physical_score));
-    System.out.println("social: "+ String.valueOf(social_score));
-    System.out.println("academics: "+ String.valueOf(academics_score));
+    // System.out.println("update:**"+ String.valueOf(score_update)+ "**");
+    // System.out.println("mental: "+ String.valueOf(mental_score));
+    // System.out.println("physical: "+ String.valueOf(physical_score));
+    // System.out.println("social: "+ String.valueOf(social_score));
+    // System.out.println("academics: "+ String.valueOf(academics_score));
 
-    System.out.println("33333333333");
+    // System.out.println("33333333333");
     Tests.checkButton(win.choices);
 
 
     // sets the window
     win.updateComponents(imgFile, prompt, false);
-  
+
+    // for testing and debugging
     System.out.println(prompt);
     System.out.println(imgFile);
 
@@ -120,7 +123,8 @@ public class Game {
     // wait for 3 seconds
     try { 
       Thread.sleep(4000); 
-      System.out.println("666666666666");
+      // for testing and debugging
+      // System.out.println("666666666666");
       Tests.checkButton(win.choices);
     } catch(InterruptedException ex) {
       Thread.currentThread().interrupt();
@@ -171,10 +175,10 @@ public class Game {
   public static void displayScores(){
 
     // get each score
-    String mental = "Mental Health: " + String.valueOf(mental_score) + "/     ";
-    String physical = "Physcial Health: " + String.valueOf(physical_score) + "/    ";
-    String academics = "Academics Performance: " + String.valueOf(academics_score) + "/    ";
-    String social = "Social Involvment: " + String.valueOf(social_score)+"/    ";
+    String mental = "Mental Health: " + String.valueOf(mental_score);
+    String physical = "Physcial Health: " + String.valueOf(physical_score);
+    String academics = "Academics Performance: " + String.valueOf(academics_score);
+    String social = "Social Involvment: " + String.valueOf(social_score);
 
     // get their acievement
     String achievement = "";
@@ -198,7 +202,8 @@ public class Game {
 
     // display
     String message = "Game over, here's your performance: "  + mental + physical + academics + social + achievement;
-    System.out.println(message);
+    // for testing
+    // System.out.println(message);
     win.updateComponents("Pictures/scores.jpeg", "<html><p style=\"width:250px\">"+message+"</p></html>", false);
     Tests.checkButton(win.choices);
 
@@ -231,12 +236,11 @@ public class Game {
     }
 
     //loop through each day
-    // for (int i=1; i<9; i++){
-    //   runDay(i);
-    // }
-    //TODO: test day per day to see that the images work
+    for (int i=1; i<9; i++){
+      runDay(i);
+    }
     Tests.checkButton(win.choices);
-    runDay(1);
+    
 
     //display scores 
     displayScores();

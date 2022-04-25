@@ -82,8 +82,8 @@ public class Window extends JFrame{
     yesButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
         //for debugging
-        String command = "Click yes!!";
-        System.out.println(command);
+        // String command = "Click yes!!";
+        // System.out.println(command);
 
         //click on anyButton
         anyButton.setActionCommand("yes clicked");
@@ -95,8 +95,8 @@ public class Window extends JFrame{
     noButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
         //for debugging
-        String command = "Click no!!";
-        System.out.println(command);
+        // String command = "Click no!!";
+        // System.out.println(command);
 
         // click on anyButton
         setResponse("no");
@@ -108,15 +108,15 @@ public class Window extends JFrame{
     anyButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e) {
         //for debugging
-        System.out.println(anyButton.getActionCommand());
+        // System.out.println(anyButton.getActionCommand());
 
         //process yes vs no click
         if (anyButton.getActionCommand().equals("yes clicked")){
           setResponse("yes");
-          System.out.println(getResponse());
+          // System.out.println(getResponse());
         } else {
           setResponse("no");
-          System.out.println(getResponse());
+          // System.out.println(getResponse());
         }
         synchronized (anyButton) {
           anyButton.notifyAll();
@@ -130,8 +130,8 @@ public class Window extends JFrame{
     exitButton.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
         //for debugging
-        String command = "Click Exit!!";
-        System.out.println(command);
+        // String command = "Click Exit!!";
+        // System.out.println(command);
 
         // exit the game
         System.exit(0);
@@ -144,8 +144,8 @@ public class Window extends JFrame{
       public void actionPerformed(ActionEvent e){
 
         //for debugigng
-        String command = "help!!";
-        System.out.println(command);
+        // String command = "help!!";
+        // System.out.println(command);
         
         // show them their scores
         String helpMsg = "Read the prompt and press the yes or no button depending on your decision. There are 8 days in the game by the end of which you'll get your player report";
